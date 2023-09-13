@@ -1,6 +1,6 @@
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class TesteBuscaInimigo {
 
@@ -17,9 +17,9 @@ public class TesteBuscaInimigo {
 
         Inimigo bulbasaur = buscaInimigo.buscaInimigo(10);
 
-        assertEquals("Bulbasaur", bulbasaur.getNome());
-        assertEquals(200.0, bulbasaur.getQtdVida(),0.1);
-        assertEquals("Solar Beam", bulbasaur.getArma());
+        Assert.assertEquals("Bulbasaur", bulbasaur.getNome());
+        Assert.assertEquals(200.0, bulbasaur.getQtdVida(),0.1);
+        Assert.assertEquals("Solar Beam", bulbasaur.getArma());
 
     }
 
@@ -28,9 +28,9 @@ public class TesteBuscaInimigo {
 
         Inimigo inimigo_invalido = buscaInimigo.buscaInimigo(-10);
 
-        assertEquals("Invalido", inimigo_invalido.getNome());
-        assertEquals(200.0, inimigo_invalido.getQtdVida(),0.1);
-        assertEquals("Invalido Beam", inimigo_invalido.getArma());
+        Assert.assertEquals("Invalido", inimigo_invalido.getNome());
+        Assert.assertEquals(200.0, inimigo_invalido.getQtdVida(),0.1);
+        Assert.assertEquals("Invalido Beam", inimigo_invalido.getArma());
     }
 
 }

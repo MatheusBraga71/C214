@@ -1,4 +1,5 @@
-public class MockInimigoService implements InimigoService{
+
+public class MockInimigoService implements InimigoService {
     @Override
     public String busca(int id) {
 
